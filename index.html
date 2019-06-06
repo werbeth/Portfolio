@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Werbeth - Desenvolvedor Web</title>
+        <meta name="description" content="Werbeth - Desenvolvedor Web">
+        <meta name="author" content="Werbeth">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:site_name" content="">
+        <Meta Charset="utf8" >   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+    </head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="exibeElementoPorTag('p')">
+                        <i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li><a href="#service">
+                        <i class="fas fa-book-open"></i> Serviços</a></li>
+                    <li><a href="#portfolio">
+                        <i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><button class="contato">
+                        <i class="fas fa-envelope"></i> Contato</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <section class="hero">
+                <img src="./img/Cards_mobile.png">
+                <div class="hero-content">
+                    <h1>Desenvolvedor Web</h1>
+                    <p style="display: none">Olá, sou Desenvolvedor Web freelancer, tenho habilidade em Html, Css, Javascript, Bootstrap,
+                       Jquery, Wordpress, também trabalho com Design de interface e Design gráfico.
+                    </p>
+                    <a class="action-btn" href="#portfolio">Portfolio</a> 
+                </div>
+            </section>
+             <!--Serviços-->
+             <div id="service" class="service-section">
+                <h2 class="section-title">Serviços</h2>
+                <div class="border"></div> 
+                <div class="services-container">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="service-title">Design gráfico</div>
+                        <div class="service-desc">
+                        </div>
+                    </div> 
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="service-title">Programação Web</div>
+                        <div class="service-desc">
+                            
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile"></i>
+                        </div>
+                        <div class="service-title">Web Responsive</div>
+                        <div class="service-desc"> 
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="service-title">Databases</div>
+                        <div class="service-desc">
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-crop-alt"></i>
+                        </div>
+                        <div class="service-title">Ui/UX Design</div>
+                        <div class="service-desc">
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <div class="service-title">Android</div>
+                        <div class="service-desc">
+                        </div>
+                    </div>
+                </div>
+            </div> <!--/Service-section-->
+            <h1 id="portfolio"  class="title-portfolio">Portfolio</h1>
+            <p class="paragrafo-port">
+                Todos os projetos aqui apresentados foram criados a fims didáticos!
+            </p>
+            <div class="portfolio">
+                <div class="card">
+                    <input type="checkbox" name="">
+                    <div class="toggle">+</div>
+                    <div class="imgBx">
+                        <img src="./img/Card-portfolio.png">
+                    </div>
+                    <div class="details">
+                        <h2>Logo Barberia</h2>
+                        <p>
+                            Esse Logo foi criado para um amigo, destinado a criação de sua marca e trabalho.
+                        </p>
+                        <a><i class="fas fa-map"> Blumenau - SC</i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="checkbox" name="">
+                    <div class="toggle">+</div>
+                    <div class="imgBx">
+                        <img src="./img/Card-animes.png">
+                    </div>
+                    <div class="details">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo, 
+                            quaerat quos pariatur repellat consequuntur incidunt illum dicta 
+                            nesciunt reiciendis expedita sunt possimus incidunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-contato" class="modal-container">
+                <div class="Modal">
+                <button class="fechar">x</button>
+                <h3 class="titulo">Deixe sua mensagem</h3>
+                <form class="contact-form" action="" method="POST">
+                    <textarea type="text" class="contact-form-name" placeholder="Seu Nome..."></textarea>
+                    <textarea type="text" class="contact-form-email" placeholder="Seu Email..."></textarea>
+                    <textarea class="contact-form-text" placeholder="Sua mensagem..."></textarea>
+                </form>
+                </div>
+            </div>
+        </div> <!--/content-->
+        <div class="footer">
+            <footer>
+                <a class="link-social" href="#"><img src="./img/facebook-logo.png"></a>
+                <a class="link-social" href="#"><img src="./img/google-plus-social-logotype.png"></a>
+                <p>Customizado por Werbeth Martins || </p>
+                <a class="info"><i class="fas fa-map"> Blumenau</i></a>
+                <a class="info"><i class="fas fa-mobile"> (47)9 91846224</i></a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
