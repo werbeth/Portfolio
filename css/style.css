@@ -493,6 +493,7 @@ nav ul {
     margin-bottom: 10px;
 }
 .portfolio {
+    opacity: 0;
     align-content: center;
     flex-wrap: wrap;
     display: flex;
