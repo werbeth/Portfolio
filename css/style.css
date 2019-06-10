@@ -62,7 +62,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeOut 20s;
+    animation: fadeOut 15s;
     animation-fill-mode: forwards;
 }
 @keyframes fadeOut {
@@ -156,7 +156,7 @@ nav li a:hover {
     text-align: center;
     margin-bottom: 5%;
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 200;
     color: #55585c;
 }
@@ -640,6 +640,7 @@ nav ul {
     float: right;
 }
 .hero h1 {
+    font-family: 'Roboto Mono', monospace;
     font-size: 1.7em;
 }
 .hero h1::after {

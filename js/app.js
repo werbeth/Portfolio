@@ -41,12 +41,12 @@ $('nav a').click(function(e){
  // Este evendo é acionado após o carregamento da página
 	var Start;
 	
-	function myFunctio(){
-		Start = setTimeout(showpage,2000);
+	function myFunction(){
+		Start = setTimeout(showpage, 1200);
 	}
 
 	function showpage(){
-		document.getElementById("loading").style.display="none";
+		document.getElementById("#loading").style.display="none";
 		document.getElementById("content").style.display="block";
 	}
 	// window.addEventListener("load", function(){
