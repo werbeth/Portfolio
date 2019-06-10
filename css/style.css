@@ -403,6 +403,74 @@ footer p {
 }
 
 /* Media queries */
+@media screen and (min-width: 768px) {
+    nav li {
+        font-family: Noto serif;
+        list-style: none;
+        padding: 2em 0;
+    }
+    .titulo {
+        margin-left: 7%;
+        margin-top: 20%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+        font-weight: 200;
+        color: #bbbdbe;
+    }
+    .modal-container {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0,.5);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Modal {
+        position: relative;
+        min-width: 300px;
+        padding: 5px;
+        background: white;
+        height: 70%;
+        width: 60%;
+        border: 10px solid #5f9fe9;
+    }
+    .contact-form-name, .contact-form-text { 
+        padding: 2px 15px;
+        margin: 0 auto;
+        margin-left: 0%;
+        width: 40%;
+    }
+    .contact-form-name, .contact-form-text, .contact-form-email { 
+        font-size: 15px;
+        color: #55585c;
+        margin-left: 4%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        
+    }
+    .contact-form-email {
+        box-sizing: border-box;
+        padding: 2px 15px;
+        margin-left: 2%;
+        width: 50%;
+    }
+    .contact-form {
+        margin-top: 2%;
+    }
+    
+    .contact-form-text{
+        height: 100px;
+        display: block;
+        width: 92.5%;
+        box-sizing: border-box;
+        padding: 2px 15px;
+    }  
+}
+
 @media (min-width: 1040px){
 .container {
     grid-template-areas: 
