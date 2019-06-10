@@ -436,12 +436,32 @@ nav ul {
     border: 1px solid black;
     border-radius: 50px;
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    z-index: -1;
+    transition: transform 0.5s ease-in-out; 
+}
+.contato::before {
+    content: '';
+    left: 17%;
+    position: absolute;
+    width: 65%;
+    height: 5%;
+    background: #fff;
+    border-radius: 50px;
+    z-index: -1;
+    transition: transform 0.5s ease-in-out; 
+}
+.contato:nth-child(1):before {
+    transform-origin: right;
+    transform: scale(0);
+}
+.contato:hover:nth-child(1):before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 .contato:hover {
     color: #EFF1F7;
     border: 1px solid #ee6fe3;  
     background: #ee6fe3;
-    transition: .2s;
 }
 .hero {
     text-align: left;
