@@ -578,10 +578,11 @@ nav ul {
 }
 
 .contact-form-text{
+    height: 100px;
     display: block;
     width: 92.5%;
     box-sizing: border-box;
-    padding: 20px 40px;
+    padding: 2px 15px;
 }
 .footer {
     grid-area: footer;
