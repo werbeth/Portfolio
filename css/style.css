@@ -62,7 +62,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeOut 10s;
+    animation: fadeOut 20s;
     animation-fill-mode: forwards;
 }
 @keyframes fadeOut {
