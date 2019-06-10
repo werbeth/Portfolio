@@ -1,4 +1,4 @@
-//Exibir Elemento 
+  //Exibir Elemento 
 $(document).ready(function(){
 	$(".fechar").click(function(){
 	  $("#modal-contato").hide(500);
@@ -37,3 +37,19 @@ $('nav a').click(function(e){
         scrollTop: targetOffset - 100
     }, 500);
 });
+
+ // Este evendo é acionado após o carregamento da página
+	var Start;
+	
+	function myFunctio(){
+		Start = setTimeout(showpage,2000);
+	}
+
+	function showpage(){
+		document.getElementById("loading").style.display="none";
+		document.getElementById("content").style.display="block";
+	}
+	// window.addEventListener("load", function(){
+	// 	const loader = document.querySelector(".loading");
+	// 	loader.className += " hidden";
+	// });
