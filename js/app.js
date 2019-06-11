@@ -42,7 +42,7 @@ $('nav a').click(function(e){
 	var Start;
 	
 	function myFunction(){
-		Start = setTimeout(showpage, 1200);
+		Start = setTimeout(showpage, 2200);
 	}
 
 	function showpage(){
