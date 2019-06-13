@@ -42,7 +42,7 @@ body {
     "portfolio"
     "footer";
     grid-template-columns: 1fr;
-    grid-auto-rows: 130px  150vh 80px 100vh 100vh;
+    grid-auto-rows: 130px  150vh 100px 110vh 100vh;
 }
 .content,
 .sidebar,
@@ -51,7 +51,7 @@ body {
     padding: 1em;
 }
 /* loading */
-.loading {
+ .loading {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
@@ -62,7 +62,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeOut 15s;
+    animation: fadeOut 10s;
     animation-fill-mode: forwards;
 }
 @keyframes fadeOut {
@@ -107,11 +107,10 @@ body {
     50% {
         height: 40px;
     }
-    100% {
-        display: none; 
+    100% { 
         height: 0;
     }
-}
+} 
 /* Nav */
 nav ul {
     margin: 0;
@@ -125,7 +124,7 @@ nav li {
     padding: 1em 0;
 }
 nav li a {
-    color: rgb(43, 41, 41);
+    color: rgb(95, 94, 94);
     font-weight: 700px;
     opacity: 0.6;
     text-decoration: none;
@@ -390,13 +389,6 @@ input:checked ~ .details {
     justify-content: center;
     align-items: center;
 }
-.modal-container.mostrar {
-    display: flex;
-}
-.mostrar .modal {
-    animation: modal .10s;
-}
-
 @keyframes modal {
     from {
         opacity: 0;
@@ -428,9 +420,10 @@ input:checked ~ .details {
     box-shadow: 0px 4px 4px rgb(0, 0, 0,.3)
 }
 .contact-form-name, .contact-form-email, .contact-form-text { 
-    margin: 0 auto;
     margin-top: 5%;
     margin-left: -4%;
+    font-size: 15px;
+    padding: 2px 30px;
     width: 110%;
 }
 .contact-form {
@@ -439,7 +432,18 @@ input:checked ~ .details {
 .contact-form-text{
     display: block;
     box-sizing: border-box;
-    padding: 20px 40px;
+    padding: 2px 15px;
+}
+.enviar {
+    position: absolute;
+    top: 88%;
+    right: 53%;
+    width: 150px;
+    height: 30px;
+    border-radius: 5%;
+    border: 1px solid #262626;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0,.3) 
 }
 
 /* Footer */
@@ -490,7 +494,7 @@ footer p {
         "portfolio"
         "footer";
         grid-template-columns: 1fr;
-        grid-auto-rows: 130px  150vh 180px 5vh 100vh;
+        grid-auto-rows: 130px  150vh 180px 150vh 100vh;
     }
     .service-box {
         max-width: 20.33%;
@@ -518,14 +522,13 @@ footer p {
         top: 0px;
         left: 0px;
         z-index: 2000;
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
     .Modal {
         position: relative;
         min-width: 300px;
-        margin: 15px auto;
         padding: 5px;
         background: white;
         height: 70%;
@@ -563,6 +566,9 @@ footer p {
         box-sizing: border-box;
         padding: 2px 15px;
     } 
+    .enviar {
+        
+    }
     .footer {
         grid-area: footer;
         background: white;
@@ -774,6 +780,17 @@ nav ul {
     width: 92.5%;
     box-sizing: border-box;
     padding: 2px 15px;
+}
+.enviar {
+    position: absolute;
+    top: 65%;
+    right: 76%;
+    width: 150px;
+    height: 30px;
+    border-radius: 5%;
+    border: 1px solid #262626;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0,.3) 
 }
 .footer {
     grid-area: footer;
