@@ -567,7 +567,7 @@ footer p {
         padding: 2px 15px;
     } 
     .enviar {
-        
+        margin-right: 17%;
     }
     .footer {
         grid-area: footer;
